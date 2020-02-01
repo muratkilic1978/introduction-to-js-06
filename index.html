@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduktion to JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="page">
+        <article class="top-article">
+            <h1 class="heading-one-title">Borgerservice</h1>
+            <p class="subtext">Guide til regler og satser for kommende pensionister. På siden her kan du beregn hvornår du tidligst kan gå folkepension.</p>
+           <form onsubmit="evaluatePension()" name="myForm" class="was-validated"> 
+              <h2 class="form-heading-two-title">Beregn hvornår du kan gå på folkepension.</h2>
+              <p class="subtext">Angiv din fødselsdato, og få beregnet hvornår du kan få folkepension:</p>
+              <div class="form-group row">
+                  <div class="col-10">
+                    <input class="form-control" name="bday" type="date" value="" id="example-date-input" required pattern="\d{4}-\d{2}-\d{2}">
+                    
+                  </div>
+              </div>
+              
+            
+              <button class="btn btn-success" id="validateBtn">Efterlønstjeck</button><!---- END button --->
+            </form><!--- END form --->
+       </article><!--- END top-aticle --->
+       <article class="bottom-article">
+           <h3 class="answer"></h3>
+       </article><!--- END bottom-article" --->
+    </section><!---END page --->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
